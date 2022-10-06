@@ -16,6 +16,8 @@
 
 查看状态: git status
 
+push到远程分支: git push -u origin main
+
 ```
 
 
@@ -25,7 +27,7 @@
 ```
 1. 在当前week下面添加自己姓名的文件夹，比如在week01，添加xiaoming, mkdir -p week01/xiaoming
 
-2. 在xiaoming的目录中添加自己的作用。比如week01.md
+2. 在xiaoming的目录中添加自己的作业。比如week01.md
 ```
 
 
