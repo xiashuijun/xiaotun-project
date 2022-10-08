@@ -6,6 +6,8 @@
 Hi xiashuijun! You've successfully authenticated, but GitHub does not provide shell access.
 
 解决办法：
+注意之后在clone仓库的时候要使用ssh的url，而不是https！
+git remote -v 查看远程仓库地址，如果不是git开头，就替换
 替换remote url，执行 git remote set-url origin git@github.com:xiashuijun/xiaotun-project.git
 ```
 
@@ -57,4 +59,40 @@ Hi xiashuijun! You've successfully authenticated, but GitHub does not provide sh
 3. 设置token的有效期，访问权限等
 4. 生成令牌Generate token
 5. 复制token，添加到config. git config --global github.token  tokenxxxxxx(你的具体token)
+
+
+
+### github拉取速度慢
+
+```
+https://tool.chinaz.com/dns?type=1&host=github.com&ip=
+
+windows: c:\Windows\System32\Drivers\etc\hosts
+mac/linux: sudo vim /etc/hosts
+
+```
+
+
+
+
+
+### git pull 出现 Pulling without specifying how to reconcile divergent branches is
+
+```
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint:
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+
+解决办法：
+git config pull.rebase false
+```
 
