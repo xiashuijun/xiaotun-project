@@ -16,18 +16,28 @@
 ### git基本命令
 
 ```
-克隆: git clone git@github.com:xiashuijun/xiaotun-project.git
+1. 克隆: git clone git@github.com:xiashuijun/xiaotun-project.git
+（not a git repository (or any of the parent directories) .git）
+cd xiaotun-project
+.git
 
-创建自己的分支： git checkout -b  xiaoming
+main（分支） -- > 远程main分支
 
-合并到主分支之前重新拉取一次： 1. git  pull  （拉取远程，必须切换到main分支，git checkout main） 2. git checkout main 3. git merge xiaoming （合并分支）
+2. 创建自己的分支： git checkout -b  xiaoming
 
-切换分支： git checkout main
+3. 查看状态 git status
 
-查看状态: git status
+4. git add . 
 
-push到远程分支: git push -u origin main
+5. git commit -m ""
 
+6. git checkout main
+
+7. git pull
+
+8. git merge xiaoming
+
+9. git push -u origin main 
 ```
 
 
